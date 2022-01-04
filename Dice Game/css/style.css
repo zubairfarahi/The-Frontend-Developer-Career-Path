@@ -41,16 +41,18 @@ h2{
 
 }
 
-h3{
-    font-weight: bold;
-    font-size: 30px;
+.player1,
+.player2{
+    padding: 0;
+    margin: 0;
+    font-size: 80px;
 }
 .player{
     border: none;
     padding: 12px;
     background-color:  rgb(0, 192, 206);
     border-radius: 15px;
-    box-shadow: 3px 3px 12px rgb(73, 79, 80), -1px 0 12px rgb(73, 79, 80);
+
 
 }
 
@@ -64,6 +66,43 @@ button{
     font-weight: 700px;
     font-size: 20px;
     background-color: rgba(233, 0, 0, 0.527);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-rest{
+    display: none;
+    margin: 0;
+    margin-top: 20px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 700px;
+    font-size: 20px;
+    background-color: rgba(233, 0, 0, 0.527);
+    color: white;
+    cursor: pointer;
+}
+
+.select{
+    border: none;
+    padding: 12px;
+    background-color:  rgb(0, 192, 206);
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px rgb(73, 79, 80), -1px 0 12px rgb(73, 79, 80);
+}
+
+.rest{
+    margin: 0;
+    margin-top: 20px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 700px;
+    font-size: 20px;
+    background-color: rgba(201, 92, 92, 0.527);
     color: white;
     cursor: pointer;
 }
