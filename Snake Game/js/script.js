@@ -20,6 +20,17 @@ function createGrid(){
 //console.log(squares)
 
 function move(){
+
+    if ((currentSnake[0] + width >= 100 && direction === 10)||
+        (currentSnake[0] % width ===9  && direction ===1)||
+        (currentSnake[0] % width === 0 && direction === -1) ||
+        (currentSnake[0] - width < 0 && direction === -10 ) ||
+        squares[currentSnake[0] + direction].classList.contains('snake')
+    ){
+        return clearInterval(timerId)
+    }
+
+
     const tail = currentSnake.pop()
     console.log(tail)
     squares[tail].classList.remove('snake')
@@ -31,7 +42,7 @@ createGrid()
 currentSnake.forEach(idx => squares[idx].classList.add('snake'))
 
 
-setInterval(move, 1000)
+let timerId = setInterval(move, 1000)
 
 function control(e){
     if(e.keyCode === 39){
