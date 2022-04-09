@@ -32,7 +32,7 @@ wash_car.addEventListener("click", ()=>{
     if(checkW){
         insert_task.innerHTML +=  task("Wash Car",track_Data["Wash Car"])
         count += track_Data["Wash Car"]
-        total.textContent = count
+        total.innerHTML = `<h4 class="amount">$${count}</h4>`
         checkW = false
     } 
 })
@@ -40,7 +40,7 @@ mow_lawn.addEventListener("click", ()=>{
     if(checkM){
         insert_task.innerHTML +=  task("Mow Lawn",track_Data["Mow Lawn"])
         count += track_Data["Mow Lawn"]
-        total.textContent = count
+        total.innerHTML = `<h4 class="amount">$${count}</h4>`
         checkM = false
     } 
 })
@@ -49,7 +49,7 @@ pull_weed.addEventListener("click", ()=>{
     if(checkP){
         insert_task.innerHTML +=  task("Pull Weeds",track_Data["Pull Weeds"])
         count += track_Data["Pull Weeds"]
-        total.textContent = count
+        total.innerHTML = `<h4 class="amount">$${count}</h4>`
         checkP = false
     } 
 })
